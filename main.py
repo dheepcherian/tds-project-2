@@ -26,7 +26,3 @@ async def solve_question(question: str = Form(...)):
 
     answer = response["choices"][0]["message"]["content"]
     return {"answer": answer}
-def get_answer(question: str = Form(...)):
-    # Dummy logic: For now, it just returns "42" for any question
-    return {"answer": "42"}
-
